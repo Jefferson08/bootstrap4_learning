@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<h1>My first System in bootstrap</h1>
+		<p>Primeiro parágrafo</p>
+
+		<hr>
+
+		<h4>Divisão por grid, colunas somando 12:</h4><br>
+
+		<!-- PRIMEIRA LINHA-->
+
+		<div class="row text-center align-items-center" style="height: 50px;"> 
+			<div class="col-sm-6" style="background-color: #EEE;">Coluna A</div>
+			<div class="col-sm-3" style="background-color: #CCC;">Coluna B</div>
+			<div class="col-sm-3" style="background-color: grey;">Coluna C</div>
+		</div>
+
+		<br>
+
+		<hr>
+
+		<!--SEGUNDA LINHA -->
+
+		<div class="row">
+
+			<!--PRIMEIRA COLUNA -->
+
+			<div class="col-sm-6">
+
+				<h2>Tabela:</h2>
+
+				<!--TABELA -->
+
+				<table class="table table-hover table-striped table-bordered">
+
+					<caption>Lista de usuários</caption>
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Nome</th>
+							<th scope="col">Sobrenome</th>
+							<th scope="col">Email</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Fulano</td>
+							<td>Ciclano</td>
+							<td>Teste@hotmail.com</td>
+						</tr>
+
+						<tr>
+							<th scope="row">2</th>
+							<td>Beltrano</td>
+							<td>Pereira</td>
+							<td>Teste@hotmail.com</td>
+						</tr>
+
+						<tr>
+							<th scope="row">3</th>
+							<td>Fulano</td>
+							<td>Ciclano</td>
+							<td>Teste@hotmail.com</td>
+						</tr>
+
+						<tr>
+							<th scope="row">4</th>
+							<td>Beltrano</td>
+							<td>Pereira</td>
+							<td>Teste@hotmail.com</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!--SEGUNDA COLUNA -->
+
+			<div class="col-sm-6">
+				<h2>Inserindo imagem responsiva:</h2>
+
+				<figure class="figure">
+					<img src="assets/images/image.jpg" class="figure-img img-fluid img-thumbnail rounded">
+					<figcaption class="figure-caption text-right">Resolução original: 1280x720</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<hr>
+
+		<!-- TERCEIRA LINHA -->
+
+		<div class="row">
+			<!-- PRIMEIRA COLUNA -->
+
+			<div class="col-sm-6">
+				<h2>Alertas: </h2>
+				<hr>
+
+				<div class="alert alert-primary" role="alert">
+					Alerta Primário
+				</div>
+
+				<div class="alert alert-secondary" role="alert">
+					Alerta secundário
+				</div>
+
+				<div class="alert alert-danger" role="alert">
+					Danger
+				</div>
+
+				<div class="alert alert-success" role="alert">
+					Success
+				</div>
+
+				<div class="alert alert-danger" role="alert">
+					<h4 class="alert-heading">Erro</h4>
+					Alerta com cabeçalho!!!
+				</div>
+
+				<div class="alert alert-danger alert dismissible" role="alert">
+					Alerta dismisseble (ou desabilitável)
+					<button class="close" data-dismiss="alert" aria-label="Fechar">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+			</div>
+
+			<!-- SEGUNDA COLUNA-->
+
+			<div class="col-sm-6">
+				<h2>Botões:</h2>
+				<hr>
+
+				<a href="#" class="btn btn-primary">Botão primário</a>
+				<button class="btn btn-secondary">Botão secundário!!</button>
+				<button class="btn btn-success">Success!!</button>
+				<button class="btn btn-danger">Danger!!</button><br><br>
+
+				<button class="btn btn-outline-primary">Botão outline</button>
+				<button class="btn btn-outline-secondary"> outline secondary</button>
+				<button class="btn btn-outline-success"> outline sucess</button>
+				<button class="btn btn-outline-danger"> outline danger</button><br><br>
+
+				<button class="btn btn-secondary btn-block">Botão responsivo</button><br>
+
+				<button class="btn btn-sm">Botão pequeno</button>
+				<button class="btn btn-success btn-lg">Botão grande</button>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<h4>Grupos de botões:</h4>
+
+						<div class="btn-group">
+							<button class="btn btn-primary">Opção 1</button>
+							<button class="btn btn-primary">Opção 2</button>
+							<button class="btn btn-primary">Opção 3</button>
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						<h4>Vertical:</h4>
+
+						<div class="btn-group-vertical">
+							<button class="btn btn-primary">Opção 1</button>
+							<button class="btn btn-primary">Opção 2</button>
+							<button class="btn btn-primary">Opção 3</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<!--QUARTA LINHA -->
+
+		<div class="row">
+
+			<!--Primeira coluna-->
+
+			<div class="col-sm-6">
+				<h2>Slideshow (Carousel)</h2>
+				<hr>
+
+
+
+				<div id="slide_show" class="slide carousel" data-ride="carousel">
+					<div class="carousel-inner">
+
+						<!-- Indicadores de slide-->
+
+						<ol class="carousel-indicators">
+						    <li data-target="#slide_show" data-slide-to="0" class="active"></li>
+						    <li data-target="#slide_show" data-slide-to="1"></li>
+						    <li data-target="#slide_show" data-slide-to="2"></li>
+						    <li data-target="#slide_show" data-slide-to="3"></li>
+						 </ol>
+
+
+						<div class="carousel-item active">
+						<img src="assets/images/slide/foto1.jpg" class="w-100">
+						</div>
+
+						<div class="carousel-item">
+							<img src="assets/images/slide/foto2.jpeg" class="w-100">
+						</div>
+
+						<div class="carousel-item">
+							<img src="assets/images/slide/foto3.png" class="w-100">
+						</div>
+
+						<div class="carousel-item">
+							<img src="assets/images/slide/foto4.jpg" class="w-100">
+						</div>
+					</div>
+				</div>
+
+				<!--Controles deslide-->
+
+				<a class="carousel-control-prev" href="#slide_show" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+
+				<a class="carousel-control-next" href="#slide_show" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a>
+
+			</div> <!-- Fechando primeira coluna-->
+
+			<!--Segunda coluna-->
+
+			<div class="col-sm-6">
+				
+			</div>
+		</div>
+
+
+
+
+	</div> <!--FECHANDO CONTAINER!! -->
+
+	
+
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
