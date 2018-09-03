@@ -43,7 +43,7 @@
 
 				<table class="table table-hover table-striped table-bordered">
 
-					<caption>Lista de usuários</caption>
+					<caption>Legenda da tabela</caption>
 					<thead class="thead-dark">
 						<tr>
 							<th scope="col">#</th>
@@ -162,23 +162,36 @@
 				<hr>
 
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-4">
 						<h4>Grupos de botões:</h4>
 
 						<div class="btn-group">
 							<button class="btn btn-primary">Opção 1</button>
 							<button class="btn btn-primary">Opção 2</button>
-							<button class="btn btn-primary">Opção 3</button>
 						</div>
 					</div>
 
-					<div class="col-sm-6">
+					<div class="col-sm-4 text-center">
 						<h4>Vertical:</h4>
 
 						<div class="btn-group-vertical">
 							<button class="btn btn-primary">Opção 1</button>
 							<button class="btn btn-primary">Opção 2</button>
 							<button class="btn btn-primary">Opção 3</button>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<h4>Drop down</h4>
+
+						<div class="dropdown">
+							<a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Opções</a>
+
+							<div class="dropdown-menu">
+								<a href="" class="dropdown-item">Opção 1</a>
+								<a href="" class="dropdown-item">Opção 2</a>
+								<a href="" class="dropdown-item">Opção 3</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -196,8 +209,6 @@
 			<div class="col-sm-6">
 				<h2>Slideshow (Carousel)</h2>
 				<hr>
-
-
 
 				<div id="slide_show" class="slide carousel" data-ride="carousel">
 					<div class="carousel-inner">
@@ -245,7 +256,76 @@
 			<!--Segunda coluna-->
 
 			<div class="col-sm-6">
-				
+				<h2>Accordion - collapse - cards:</h2>
+				<hr>
+
+				<h4>Collapse:</h4>
+				<hr>
+
+				<p>
+				  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+				    Link com href
+				  </a>
+				  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				    Botão com data-target
+				  </button>
+				</p>
+				<div class="collapse" id="collapseExample">
+				  <div class="card card-body">
+				    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+				  </div>
+				</div>
+
+				<h4>Accordion:</h4>
+				<hr>
+
+				<div id="accordion">
+					<div class="card">
+						<div class="card-header">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#c1" aria-controls="c1">Card 1</button>
+						</div>
+
+						<div id="c1" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+								Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#c2" aria-controls="c2">Card 2</button>
+						</div>
+
+						<div id="c2" class="collapse show" data-parent="#accordion">
+							<div class="card-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#c3" aria-controls="c3">Card 3</button>
+						</div>
+
+						<div id="c3" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+								Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. 
+							</div>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 
